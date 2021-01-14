@@ -6,7 +6,7 @@ const locationCollection = [
         water: "Chao Phraya River"
 
     },
-
+ 
     {
         image: "images/guayana.jpeg",
         city: "Guayana City",
@@ -40,8 +40,7 @@ const locationCollection = [
         city: "",
         country: "Colombia",
         water: "San Juan River Basin"
-    },
-
+    }
 ]
 
 export const useLocation = () => {
