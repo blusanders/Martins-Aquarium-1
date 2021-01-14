@@ -1,0 +1,27 @@
+.containerLeft {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 73%;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+.containerLeft h2 {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #001a33;
+    font-family: 'Merienda', cursive;
+}
+
+.contentArticle {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #5cd6d6;
+    margin: 30px;
+    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}

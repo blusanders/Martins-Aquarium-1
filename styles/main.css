@@ -1,108 +1,22 @@
+@import "header.css";
+@import "footer.css";
+@import "contentRight.css";
+@import "contentLeft.css";
+@import "cards.css";
 
+/* Styling for Main */
 body { 
     margin: 0;
-    background-color: #001a33;
 }
  
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-/* Header Styling */
-header {
-    background-color: #ccffff;
-    display: flex;
-    align-items: center;
-    font-size: x-large;
-    font-family: 'Merienda', cursive;
-    width: 100%;
-    text-shadow: 40em;
-}
-
-header img {
-    width: 13%;
-    padding: auto;
-    align-self: left;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
-
-
-nav {
-    display: flex;
-    background-color: teal;
-    padding: 0 20px;
-    color: seashell
-}
-
-nav p {
-    padding: 0 20px;
-}
-
-/* Styling for Middle Section */
 .contentContainer {
     display: flex;
-    flex-wrap: wrap;
     background-color: #001a33;
     justify-content: space-around;
-}
-
-/* Left */
-.containerLeft {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 73%;
-    border-radius: 5px;
-    margin-right: 0;
-}
-
-.containerLeft h2 {
-    width: 100%;
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    color: #001a33;
-    font-family: 'Merienda', cursive;
-}
-
-/* Right */
-.containerRight {
-    flex-basis: 24%;
-    margin: 20px 0;
-    height: auto;
-    min-width: 300px;
-    padding: 10px 20px;
-    
-}
-
-.containerRight div {
-    background-color: teal;
-    color: seashell;
-    padding: 20px 40px;
-    height: auto;
-    border-radius: 5px;
-    align-content: flex-start;
-    
-}
-
-/* Sub Heading Style */
-div h2 {
-    font-family: 'Merienda', cursive;
-    color: seashell;
-    font-size: xx-large;
-}
-
-/* Left Article Styling */
-.contentArticle {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #5cd6d6;
-    margin: 30px;
-    padding: 10px;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    padding-bottom: 20px;
 }
 
 
