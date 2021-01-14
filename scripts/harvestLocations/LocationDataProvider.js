@@ -29,7 +29,7 @@ const locationCollection = [
     },
 
     {
-        image: "images/hongkong.jpeg",
+        image: "images/hong-kong.jpeg",
         city: "Kau Sai Chuau",
         country: "China, Hong Kong",
         water: ""
