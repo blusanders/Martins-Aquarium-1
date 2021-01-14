@@ -3,6 +3,7 @@
     margin: 20px 0;
     height: auto;
     min-width: 300px;
+    flex-shrink: 5;
     padding: 10px 20px;
     
 }
@@ -21,4 +22,11 @@ div h2 {
     font-family: 'Merienda', cursive;
     color: seashell;
     font-size: xx-large;
+}
+
+@media only screen and (max-width: 1300px) {
+    .containerRight {
+        flex-basis: 73%;
+        margin: 30px;
+    }
 }

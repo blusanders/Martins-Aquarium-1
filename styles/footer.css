@@ -1,0 +1,22 @@
+/* Footer Styling */
+footer {
+    display: flex;
+    background-color: #ccffff;
+    justify-content: center;
+}
+
+footer p {
+    padding: 15px;
+    font-family: 'Merienda', cursive;
+    font-size: 18pt;
+}
+
+.socialContainer {
+    display: flex;
+    align-items: center;
+}
+
+.socialContainer img {
+    width: 35px;
+    padding: 8px;
+}
