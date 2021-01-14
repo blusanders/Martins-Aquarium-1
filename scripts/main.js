@@ -1,5 +1,5 @@
-import { FishList } from "./fishList.js"
-import { QuoteList } from "./QuoteList.js"
+import { FishList } from "./aquariumFish/fishList.js"
+import { QuoteList } from "./travelQuotes/QuoteList.js"
 
 
 FishList()

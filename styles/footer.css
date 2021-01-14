@@ -2,21 +2,34 @@
 footer {
     display: flex;
     background-color: #ccffff;
-    justify-content: center;
+    padding: 10px;
 }
 
-footer p {
-    padding: 15px;
+.copyright {
+    align-self: flex-end;
+    color: teal;
+    margin: 0;
+}
+
+div h4 {
     font-family: 'Merienda', cursive;
     font-size: 18pt;
+    padding: 5px;
 }
 
-.socialContainer {
+.contactMartin  {
     display: flex;
-    align-items: center;
+    margin-left: 0;
+    padding-bottom: 30px;
 }
 
-.socialContainer img {
+.socialMedia {
+    display: flex;
+    align-items: center; 
+    padding-left: 10px;
+} 
+ 
+.socialMedia img {
     width: 35px;
     padding: 8px;
-}
+} 
