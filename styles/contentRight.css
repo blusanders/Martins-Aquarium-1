@@ -1,0 +1,32 @@
+.containerRight {
+    flex-basis: 24%;
+    margin: 20px 0;
+    height: auto;
+    min-width: 300px;
+    flex-shrink: 5;
+    padding: 10px 20px;
+    
+}
+
+.containerRight div {
+    background-color: teal;
+    color: seashell;
+    padding: 20px 40px;
+    height: auto;
+    border-radius: 5px;
+    align-content: flex-start;
+}
+
+/* Sub Heading Style */
+div h2 {
+    font-family: 'Merienda', cursive;
+    color: seashell;
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 1300px) {
+    .containerRight {
+        flex-basis: 73%;
+        margin: 30px;
+    }
+}

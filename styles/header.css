@@ -1,0 +1,31 @@
+/* Header Styling */
+header {
+    background-color: #ccffff;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-family: 'Merienda', cursive;
+    width: 100%;
+    text-shadow: 40em;
+}
+
+header img {
+    width: 13%;
+    padding: auto;
+    align-self: left;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+nav {
+    display: flex;
+    background-color: teal;
+    padding: 0 20px;
+    color: seashell
+}
+
+nav p {
+    padding: 0 20px;
+}

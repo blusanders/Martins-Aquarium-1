@@ -1,0 +1,61 @@
+/* Styling for All Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    height: auto;
+    border-right: darkcyan 2px solid;
+    border-bottom: darkcyan 2px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Card Text Spacing */
+.contentArticle p {
+    margin: 2px;
+}
+
+
+/* -- Aquarium Fish -- */
+
+.fishCard {
+    background-color: teal;
+    color: seashell;
+}
+
+.fishCard img {
+    width: 100%;
+    padding: 5px;
+    height: 190px;
+    align-self: center;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+
+
+/* -- Travel Advice -- */
+
+.quoteCard {
+    background-color: teal;
+    color: seashell;
+}
+
+.quoteCard__text {
+    padding: 10px;
+    font-size: 14pt;
+}
+
+/* -- Locations of Harvest -- */
+
+.locationCard {
+    background-color: teal;
+    color: seashell;
+}
+
+.locationCard img {
+    padding-bottom: 10px;
+    height: 190px;
+}
