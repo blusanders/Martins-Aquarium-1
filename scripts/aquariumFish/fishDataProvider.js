@@ -4,8 +4,17 @@ const fishCollection = [
         image: "images/betta.jpg",
         species: "Betta",
         location: "Chao Phraya, Thailand",
-        length: "6–8 cm",
+        length: 6,
         diet: "Zooplankton, Crustaceans, Insect Larvae"
+    },
+
+    {
+        name: "Tetra Collins", 
+        image: "images/tetra.jpeg",
+        species: "Emperor Tetra",
+        location: "San Juan River, Colombia",
+        length: 2,
+        diet: "Daphnia, Mosquito Larvae"
     },
 
     {
@@ -13,7 +22,7 @@ const fishCollection = [
         image: "images/angel-fish.jpg",
         species: "Angel Fish",
         location: "Orinoco River, Venezuela",
-        length: "7 in",
+        length: 12,
         diet: "Worms, Small Crustaceans"
     },
 
@@ -22,17 +31,8 @@ const fishCollection = [
         image: "images/guppie.jpeg",
         species: "Dragon Big Ear Guppy",
         location: "Fernando de Noronha, Brazil",
-        length: "1 in - 2 in",
+        length: 2,
         diet: "Algae, Bloodworms, Brine Shrimp",
-    },
-
-    {
-        name: "Jojo Seawa", 
-        image: "images/pleco.jpeg",
-        species: "Zebra Pleco",
-        location: "Xingu River, Brazil",
-        length: "3 in - 4 in",
-        diet: "Brine Shrimp, Bloodworms, Algae"
     },
 
     {
@@ -40,21 +40,56 @@ const fishCollection = [
         image: "images/goldfish.jpeg",
         species: "Black Oranda Goldfish",
         location: "China",
-        length: "10 in",
+        length: 5,
         diet: "Insects, Crustaceans, Plants"
     },
-
+    
     {
-        name: "Tetra Collins", 
-        image: "images/tetra.jpeg",
-        species: "Emperor Tetra",
-        location: "San Juan River, Colombia",
-        length: "2 in",
-        diet: "Daphnia, Mosquito Larvae"
+        name: "Jojo Seawa", 
+        image: "images/pleco.jpeg",
+        species: "Zebra Pleco",
+        location: "Xingu River, Brazil",
+        length: 10,
+        diet: "Brine Shrimp, Bloodworms, Algae"
     },
-
 ]
 
 export const useFish = () => {
     return fishCollection.slice()
+}
+
+export const mostHolyFish = () => {
+    const holyFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+            holyFish.push(fish)
+            console.log(holyFish)
+        }
+    }
+    return holyFish
+}
+
+export const soldierFish = () => {
+    const soldiers = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0) {
+            soldiers.push(fish)
+            console.log(soldiers)
+        }
+    }
+    return soldiers
+}
+
+export const nonHolyFish = () => {
+    const regularFish = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+            regularFish.push(fish)
+            console.log(regularFish)
+        }
+    }
+    return regularFish
 }
