@@ -1,4 +1,3 @@
-
 export const Fish = (fish) => {
     return `   
     <section class="fishCard card">
