@@ -1,4 +1,4 @@
-import { mostHolyFish, soldierFish, nonHolyFish,} from './fishDataProvider.js'
+import { sortFish } from './fishDataProvider.js'
 import { Fish } from './fish.js'
 
 
@@ -14,13 +14,9 @@ export const FishList = () => {
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".containerLeft")
 
-    const holyFishArray = mostHolyFish()
-    const soldierFishArray = soldierFish()
-    const nonHolyFishArray = nonHolyFish()
+    const allFishArrays = sortFish()
     
-    buildFishHTML(holyFishArray)
-    buildFishHTML(soldierFishArray)
-    buildFishHTML(nonHolyFishArray)
+    buildFishHTML(allFishArrays)
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `

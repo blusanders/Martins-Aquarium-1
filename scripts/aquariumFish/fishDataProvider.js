@@ -54,42 +54,26 @@ const fishCollection = [
     },
 ]
 
-export const useFish = () => {
+export const useAllFish = () => {
     return fishCollection.slice()
 }
 
-export const mostHolyFish = () => {
+export const sortFish = () => {
     const holyFish = []
+    const soldiers = []
+    const regularFish = []
+    let allTheFish = []
 
     for (const fish of fishCollection) {
         if (fish.length % 3 === 0) {
             holyFish.push(fish)
-            console.log(holyFish)
-        }
-    }
-    return holyFish
-}
-
-export const soldierFish = () => {
-    const soldiers = []
-
-    for (const fish of fishCollection) {
-        if (fish.length % 5 === 0) {
+        } else if (fish.length % 5 === 0) {
             soldiers.push(fish)
-            console.log(soldiers)
-        }
-    }
-    return soldiers
-}
-
-export const nonHolyFish = () => {
-    const regularFish = []
-
-    for (const fish of fishCollection) {
-        if (fish.length % 5 !== 0 && fish.length % 3 !== 0) {
+        } else {
             regularFish.push(fish)
-            console.log(regularFish)
         }
-    }
-    return regularFish
+    } 
+
+    allTheFish = holyFish.concat(soldiers, regularFish)
+    return allTheFish
 }
